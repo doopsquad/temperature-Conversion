@@ -1,0 +1,12 @@
+div {
+    box-shadow: -10 -10 px;
+    background-color: aliceblue;
+    text-align: center;
+    padding: 3em;
+    font-size: 2em;
+}
+
+#heading {
+    color: red;
+}
+
