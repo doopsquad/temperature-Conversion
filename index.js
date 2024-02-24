@@ -3,14 +3,17 @@ let ctf = document.getElementById('celsius');
 let ftc = document.getElementById('fahrenheit');
 let answer = document.getElementById('answer');
 let btn = document.getElementById('joe');
-let degrees = input.value;
+let degrees = input;
 
 function convert() {
+    degrees = Number(degrees.value);
     if (ctf.checked) {
-        answer.innerHTML = (Number(degrees) * (9/5)) + 32 + " Fahrenheit";
+        degrees = degrees * 9/5 + 32;
+        answer.innerHTML =  degrees + " Fahrenheit";
     } 
     else if (ftc.checked) {
-        answer.innerHTML = 5/9(Number(degrees) - 32) + " Celsius";
+        degrees = (degrees - 32) * 5/9;
+        answer.innerHTML =  degrees + " Celsius";
     }
 }
 
